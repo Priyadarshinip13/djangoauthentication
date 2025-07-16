@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
+from decouple import config
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -83,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'user',
         'USER': 'root',
-        'PASSWORD': 'priya@1234',
+        'PASSWORD': config('MYSQL_PASSWORD'),
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -97,7 +98,11 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'ppriyadarshini2003@gmail.com'
-EMAIL_HOST_PASSWORD = 'zeoa pvrm nfnk qkhn'  # Use app password if 2FA enabled
+# Use app password if 2FA enabled
+
+
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+MYSQL_PASSWORD = config('MYSQL_PASSWORD')
 
 
 # Password validation
