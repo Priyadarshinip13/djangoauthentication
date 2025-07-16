@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <style>
+  body {
+    background: linear-gradient(to right, #4b0082, #000000); /* purple to black gradient */
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .content-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 5% auto;
+    box-shadow: 0 0 20px #8000ff;
+  }
+
+  label, .form-group, legend {
+    color: #fff;
+  }
+
+  input, select, textarea {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+    border: 1px solid #8000ff;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 5px #8000ff;
+    outline: none;
+  }
+
+  .btn-signup {
+    background: #8000ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-signup:hover {
+    background-color: #a64dff;
+    box-shadow: 0 0 15px #8000ff;
+    transform: scale(1.05);
+  }
+
+  a {
+    color: #a64dff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  sub {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+</style>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900');
+        </style>
+    </head>
+    <body style="background: #f5f8fa;font-family: 'Roboto', sans-serif;">
+        <div style="width: 90%;max-width:600px;margin: 20px auto;background: #ffffff;">
+            <section style="margin: 0 15px;color:#425b76;">
+                <h2 style="margin: 40px 0 27px 0;text-align: center;">Thank you to registration</h2>
+                <hr style="border:0;border-top: 1px solid rgba(66,91,118,0.3);max-width: 50%">
+                <p style="font-size:15.5px;font-weight: bold;margin:40px 20px 15px 20px;">Hi {{username}}, we have received your details and will process soon.</p>
+            </section>
+        </div>
+    </body>
+</html>
