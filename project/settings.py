@@ -106,7 +106,7 @@ EMAIL_HOST_USER = 'ppriyadarshini2003@gmail.com'
 
 
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
-MYSQL_PASSWORD = config('MYSQL_PASSWORD')
+
 
 
 # Password validation
